@@ -11,5 +11,12 @@ cache:
 
 script:
   - mvn clean install
-  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
-  - docker push microportal/portal-service
+
+before_deploy:
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+
+deploy:
+  provider: script
+  script: docker push microportal/portal-service
+  on:
+    branch: master
