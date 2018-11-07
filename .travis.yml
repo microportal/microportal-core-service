@@ -1,0 +1,9 @@
+language: java
+install: docker
+sudo: false
+jdk:
+  - openjdk11
+
+script:
+  - mvn clean install
+  - docker push microportal/portal-service
