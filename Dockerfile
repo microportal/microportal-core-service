@@ -1,6 +1,7 @@
-FROM microportal/openjdk-kong:11-jre-slim
+FROM openjdk:11-jre-slim
 
-ENV APP_JAR=portal-service.jar
+ADD target/portal-service.jar /opt/
+WORKDIR /opt
 
-ADD target/${APP_JAR} /opt/
-
+ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom \
+    -jar portal-service.jar
