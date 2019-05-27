@@ -1,12 +1,12 @@
-package br.org.portal.portalapi;
+package br.org.microportal.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PortalServiceApplication {
+public class MicroportalCoreApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PortalServiceApplication.class, args);
+        SpringApplication.run(MicroportalCoreApplication.class, args);
     }
 }

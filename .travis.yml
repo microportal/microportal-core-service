@@ -17,6 +17,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push microportal/portal-service
+  script: docker push microportal/core-service
   on:
     branch: master

@@ -1,4 +1,4 @@
-package br.org.portal.portalapi.model;
+package br.org.microportal.core.model;
 
 import lombok.Getter;
 import lombok.Setter;

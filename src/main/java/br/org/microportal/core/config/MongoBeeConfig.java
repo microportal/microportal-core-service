@@ -1,4 +1,4 @@
-package br.org.portal.portalapi.config;
+package br.org.microportal.core.config;
 
 import com.github.mongobee.Mongobee;
 import com.mongodb.MongoClient;
@@ -40,7 +40,7 @@ public class MongoBeeConfig extends AbstractMongoConfiguration {
         runner.setDbName(getDatabaseName());
         runner.setMongoTemplate(mongoTemplate());
         runner.setSpringEnvironment(environment);
-        runner.setChangeLogsScanPackage("br.org.portal.portalapi.changelog");
+        runner.setChangeLogsScanPackage("br.org.microportal.core.changelog");
         return runner;
     }
 }

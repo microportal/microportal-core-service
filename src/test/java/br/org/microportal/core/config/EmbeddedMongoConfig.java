@@ -1,4 +1,4 @@
-package br.org.portal.portalapi.config;
+package br.org.microportal.core.config;
 
 import com.github.mongobee.Mongobee;
 import com.mongodb.MongoClient;

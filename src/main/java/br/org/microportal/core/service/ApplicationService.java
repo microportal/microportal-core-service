@@ -1,8 +1,7 @@
-package br.org.portal.portalapi.service;
+package br.org.microportal.core.service;
 
-import br.org.portal.portalapi.model.ApplicationDocument;
-import br.org.portal.portalapi.repository.ApplicationRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import br.org.microportal.core.model.ApplicationDocument;
+import br.org.microportal.core.repository.ApplicationRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,8 +10,11 @@ import java.util.Optional;
 @Service
 public class ApplicationService {
 
-    @Autowired
-    private ApplicationRepository applicationRepository;
+    private final ApplicationRepository applicationRepository;
+
+    public ApplicationService(ApplicationRepository applicationRepository) {
+        this.applicationRepository = applicationRepository;
+    }
 
     public List<ApplicationDocument> findAll() {
         return applicationRepository.findAll();

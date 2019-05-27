@@ -1,4 +1,4 @@
-package br.org.portal.portalapi;
+package br.org.microportal.core;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class PortalApiApplicationDocumentTests {
+public class MicroportalCoreApplicationTests {
 
     @Test
     public void contextLoads() {

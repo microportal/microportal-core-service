@@ -1,7 +1,7 @@
-package br.org.portal.portalapi.controller;
+package br.org.microportal.core.controller;
 
-import br.org.portal.portalapi.model.ApplicationDocument;
-import br.org.portal.portalapi.service.ApplicationService;
+import br.org.microportal.core.model.ApplicationDocument;
+import br.org.microportal.core.service.ApplicationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

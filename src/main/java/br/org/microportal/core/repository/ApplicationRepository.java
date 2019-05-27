@@ -1,6 +1,6 @@
-package br.org.portal.portalapi.repository;
+package br.org.microportal.core.repository;
 
-import br.org.portal.portalapi.model.ApplicationDocument;
+import br.org.microportal.core.model.ApplicationDocument;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
